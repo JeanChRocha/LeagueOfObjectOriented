@@ -18,6 +18,7 @@
     
     
 }
+
 @property (nonatomic) int raca;
 @property (nonatomic) float vida;
 @property (nonatomic) int forcaEscudo;
