@@ -27,5 +27,6 @@
 
 -(float)ataque:(Jogador*)adversario;
 -(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca;
+-(void) dizOi;
 
 @end
