@@ -1,5 +1,5 @@
 //
-//  Espada.h
+//  ArcoEFlecha.h
 //  Loo
 //
 //  Created by ANDRE GIMENEZ on 11/18/13.
@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Arma.h"
 
-@interface Espada : Arma {
-    int forcaMaxima;
-    int desgate;
+@interface ArcoEFlecha : Arma {
+    int quantidadeFlechas;
 }
 
--(Espada *) initWithForcaMaxima:(int)f andPrecisaoAtaque:(double) p;
+-(ArcoEFlecha *) initWithQuantidadeFlechas:(int) q andPrecisaoArma:(double) p;
 
 @end

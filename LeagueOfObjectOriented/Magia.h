@@ -1,5 +1,5 @@
 //
-//  Espada.h
+//  Magia.h
 //  Loo
 //
 //  Created by ANDRE GIMENEZ on 11/18/13.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Arma.h"
 
-@interface Espada : Arma {
-    int forcaMaxima;
-    int desgate;
+@interface Magia : Arma {
+    int habilidade;
 }
 
--(Espada *) initWithForcaMaxima:(int)f andPrecisaoAtaque:(double) p;
+-(Magia *) initWithPrecisaoArma:(double) p andRaca:(int)r;
+-(double) calcularForcaAtaque:(int)raca;
 
 @end

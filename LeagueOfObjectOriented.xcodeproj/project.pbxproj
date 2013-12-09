@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C8BE0918564EEB00BB4730 /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8BE0818564EEB00BB4730 /* Espada.m */; };
 		271F245C1854A34F0024E200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F245B1854A34F0024E200 /* Foundation.framework */; };
-		271F245F1854A34F0024E200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F245E1854A34F0024E200 /* main.m */; };
 		271F24631854A34F0024E200 /* LeagueOfObjectOriented.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 271F24621854A34F0024E200 /* LeagueOfObjectOriented.1 */; };
-		271F246B1854F9B30024E200 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F246A1854F9B30024E200 /* Jogador.m */; };
-		271F246E1854FBB50024E200 /* Arma.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F246D1854FBB50024E200 /* Arma.m */; };
-		271F24711854FEDE0024E200 /* LeagueOfOrientedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F24701854FEDE0024E200 /* LeagueOfOrientedObject.m */; };
+		65FD06AE18568B5100CDF71D /* Arma.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06AD18568B5100CDF71D /* Arma.m */; };
+		65FD06BE18568B7600CDF71D /* ArcoEFlecha.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06B018568B7600CDF71D /* ArcoEFlecha.m */; };
+		65FD06BF18568B7600CDF71D /* Arena.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06B218568B7600CDF71D /* Arena.m */; };
+		65FD06C018568B7600CDF71D /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06B418568B7600CDF71D /* Espada.m */; };
+		65FD06C118568B7600CDF71D /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06B618568B7600CDF71D /* Jogador.m */; };
+		65FD06C218568B7600CDF71D /* LeagueOfOrientedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06B818568B7600CDF71D /* LeagueOfOrientedObject.m */; };
+		65FD06C318568B7600CDF71D /* Machado.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06BA18568B7600CDF71D /* Machado.m */; };
+		65FD06C418568B7600CDF71D /* Magia.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06BC18568B7600CDF71D /* Magia.m */; };
+		65FD06C518568B7600CDF71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06BD18568B7600CDF71D /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,19 +34,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02C8BE0718564EEB00BB4730 /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
-		02C8BE0818564EEB00BB4730 /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
 		271F24581854A34F0024E200 /* LeagueOfObjectOriented */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeagueOfObjectOriented; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F245B1854A34F0024E200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		271F245E1854A34F0024E200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		271F24611854A34F0024E200 /* LeagueOfObjectOriented-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeagueOfObjectOriented-Prefix.pch"; sourceTree = "<group>"; };
 		271F24621854A34F0024E200 /* LeagueOfObjectOriented.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LeagueOfObjectOriented.1; sourceTree = "<group>"; };
-		271F24691854F9B30024E200 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		271F246A1854F9B30024E200 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-		271F246C1854FBB50024E200 /* Arma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arma.h; sourceTree = "<group>"; };
-		271F246D1854FBB50024E200 /* Arma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arma.m; sourceTree = "<group>"; };
-		271F246F1854FEDE0024E200 /* LeagueOfOrientedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueOfOrientedObject.h; sourceTree = "<group>"; };
-		271F24701854FEDE0024E200 /* LeagueOfOrientedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueOfOrientedObject.m; sourceTree = "<group>"; };
+		65FD06AC18568B5100CDF71D /* Arma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arma.h; path = ../Arma.h; sourceTree = "<group>"; };
+		65FD06AD18568B5100CDF71D /* Arma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Arma.m; path = ../Arma.m; sourceTree = "<group>"; };
+		65FD06AF18568B7600CDF71D /* ArcoEFlecha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcoEFlecha.h; sourceTree = "<group>"; };
+		65FD06B018568B7600CDF71D /* ArcoEFlecha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcoEFlecha.m; sourceTree = "<group>"; };
+		65FD06B118568B7600CDF71D /* Arena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arena.h; sourceTree = "<group>"; };
+		65FD06B218568B7600CDF71D /* Arena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arena.m; sourceTree = "<group>"; };
+		65FD06B318568B7600CDF71D /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
+		65FD06B418568B7600CDF71D /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
+		65FD06B518568B7600CDF71D /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		65FD06B618568B7600CDF71D /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		65FD06B718568B7600CDF71D /* LeagueOfOrientedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueOfOrientedObject.h; sourceTree = "<group>"; };
+		65FD06B818568B7600CDF71D /* LeagueOfOrientedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueOfOrientedObject.m; sourceTree = "<group>"; };
+		65FD06B918568B7600CDF71D /* Machado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Machado.h; sourceTree = "<group>"; };
+		65FD06BA18568B7600CDF71D /* Machado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Machado.m; sourceTree = "<group>"; };
+		65FD06BB18568B7600CDF71D /* Magia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magia.h; sourceTree = "<group>"; };
+		65FD06BC18568B7600CDF71D /* Magia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Magia.m; sourceTree = "<group>"; };
+		65FD06BD18568B7600CDF71D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,17 +97,25 @@
 		271F245D1854A34F0024E200 /* LeagueOfObjectOriented */ = {
 			isa = PBXGroup;
 			children = (
-				271F245E1854A34F0024E200 /* main.m */,
+				65FD06AF18568B7600CDF71D /* ArcoEFlecha.h */,
+				65FD06B018568B7600CDF71D /* ArcoEFlecha.m */,
+				65FD06B118568B7600CDF71D /* Arena.h */,
+				65FD06B218568B7600CDF71D /* Arena.m */,
+				65FD06B318568B7600CDF71D /* Espada.h */,
+				65FD06B418568B7600CDF71D /* Espada.m */,
+				65FD06B518568B7600CDF71D /* Jogador.h */,
+				65FD06B618568B7600CDF71D /* Jogador.m */,
+				65FD06B718568B7600CDF71D /* LeagueOfOrientedObject.h */,
+				65FD06B818568B7600CDF71D /* LeagueOfOrientedObject.m */,
+				65FD06B918568B7600CDF71D /* Machado.h */,
+				65FD06BA18568B7600CDF71D /* Machado.m */,
+				65FD06BB18568B7600CDF71D /* Magia.h */,
+				65FD06BC18568B7600CDF71D /* Magia.m */,
+				65FD06BD18568B7600CDF71D /* main.m */,
+				65FD06AC18568B5100CDF71D /* Arma.h */,
+				65FD06AD18568B5100CDF71D /* Arma.m */,
 				271F24621854A34F0024E200 /* LeagueOfObjectOriented.1 */,
 				271F24601854A34F0024E200 /* Supporting Files */,
-				271F24691854F9B30024E200 /* Jogador.h */,
-				271F246A1854F9B30024E200 /* Jogador.m */,
-				271F246C1854FBB50024E200 /* Arma.h */,
-				02C8BE0718564EEB00BB4730 /* Espada.h */,
-				02C8BE0818564EEB00BB4730 /* Espada.m */,
-				271F246D1854FBB50024E200 /* Arma.m */,
-				271F246F1854FEDE0024E200 /* LeagueOfOrientedObject.h */,
-				271F24701854FEDE0024E200 /* LeagueOfOrientedObject.m */,
 			);
 			path = LeagueOfObjectOriented;
 			sourceTree = "<group>";
@@ -159,11 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271F24711854FEDE0024E200 /* LeagueOfOrientedObject.m in Sources */,
-				271F246B1854F9B30024E200 /* Jogador.m in Sources */,
-				02C8BE0918564EEB00BB4730 /* Espada.m in Sources */,
-				271F245F1854A34F0024E200 /* main.m in Sources */,
-				271F246E1854FBB50024E200 /* Arma.m in Sources */,
+				65FD06BF18568B7600CDF71D /* Arena.m in Sources */,
+				65FD06C418568B7600CDF71D /* Magia.m in Sources */,
+				65FD06C018568B7600CDF71D /* Espada.m in Sources */,
+				65FD06AE18568B5100CDF71D /* Arma.m in Sources */,
+				65FD06C318568B7600CDF71D /* Machado.m in Sources */,
+				65FD06C118568B7600CDF71D /* Jogador.m in Sources */,
+				65FD06C218568B7600CDF71D /* LeagueOfOrientedObject.m in Sources */,
+				65FD06C518568B7600CDF71D /* main.m in Sources */,
+				65FD06BE18568B7600CDF71D /* ArcoEFlecha.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

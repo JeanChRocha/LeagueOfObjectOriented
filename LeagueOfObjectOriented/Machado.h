@@ -1,5 +1,5 @@
 //
-//  Espada.h
+//  Machado.h
 //  Loo
 //
 //  Created by ANDRE GIMENEZ on 11/18/13.
@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Arma.h"
 
-@interface Espada : Arma {
+@interface Machado : Arma {
     int forcaMaxima;
     int desgate;
 }
 
--(Espada *) initWithForcaMaxima:(int)f andPrecisaoAtaque:(double) p;
+-(Machado *) initWithForcaMaxima:(int)f andPrecisaoArma:(double) p;
 
 @end

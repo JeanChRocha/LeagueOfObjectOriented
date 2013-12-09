@@ -1,32 +1,39 @@
 //
 //  Jogador.h
-//  LeagueOfObjectOriented
+//  Loo
 //
-//  Created by Vinicius Miana on 12/8/13.
-//  Copyright (c) 2013 Vinicius Miana. All rights reserved.
+//  Created by ANDRE GIMENEZ on 11/18/13.
+//  Copyright (c) 2013 Andre_Glauco. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Arma.h"
+@class Arena;
 
-#define ELFO 0
-#define HUMANO 1
-#define ORC 2
-#define ANAO 3
 
 @interface Jogador : NSObject {
-    
-    
+    NSString *nome;
+    int raca;
+    double vida;
+    int forcaEscudo;
+    Arma * armaPrimaria;
+    Arma * armaSecundaria;
 }
 
-@property (nonatomic) int raca;
-@property (nonatomic) float vida;
-@property (nonatomic) int forcaEscudo;
-@property (nonatomic) Arma* armaPrimaria;
-@property (nonatomic) Arma* armaSecundaria;
++(int)ELFO;
++(int)HUMANO;
++(int)ORC;
++(int)ANAO;
 
--(float)ataque:(Jogador*)adversario;
--(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca;
--(void) dizOi;
+@property NSString *nome;
+@property int raca;
+@property double vida;
+@property int forcaEscudo;
+@property Arma * armaPrimaria;
+@property Arma * armaSecundaria;
+
+-(Jogador *) initWithNome:(NSString *)n andRaca:(int)r andArmaPrimaria:(Arma *)ap andArmaSecundaria:(Arma *)as;
+-(double) ataque:(Arena *)a andEscolhe:(int)e;
+-(void) sofrerAtaque:(double) forca;
 
 @end
