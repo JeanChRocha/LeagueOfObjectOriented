@@ -11,6 +11,7 @@
 @implementation Jogador
 
 -(float)ataque:(Jogador*)adversario {
+    NSLog(@"teste");
     return 0;
 }
 
