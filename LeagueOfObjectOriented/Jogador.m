@@ -11,11 +11,16 @@
 @implementation Jogador
 
 -(float)ataque:(Jogador*)adversario {
+    NSLog(@"teste");
     return 0;
 }
 
 -(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca {
     return 0;
+}
+
+-(void) dizOi {
+    NSLog(@"Oi!");
 }
 
 

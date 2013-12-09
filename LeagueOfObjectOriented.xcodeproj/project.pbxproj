@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C8BE0918564EEB00BB4730 /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C8BE0818564EEB00BB4730 /* Espada.m */; };
 		271F245C1854A34F0024E200 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F245B1854A34F0024E200 /* Foundation.framework */; };
 		271F245F1854A34F0024E200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F245E1854A34F0024E200 /* main.m */; };
 		271F24631854A34F0024E200 /* LeagueOfObjectOriented.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 271F24621854A34F0024E200 /* LeagueOfObjectOriented.1 */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02C8BE0718564EEB00BB4730 /* Espada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Espada.h; sourceTree = "<group>"; };
+		02C8BE0818564EEB00BB4730 /* Espada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Espada.m; sourceTree = "<group>"; };
 		271F24581854A34F0024E200 /* LeagueOfObjectOriented */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeagueOfObjectOriented; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F245B1854A34F0024E200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		271F245E1854A34F0024E200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				271F24691854F9B30024E200 /* Jogador.h */,
 				271F246A1854F9B30024E200 /* Jogador.m */,
 				271F246C1854FBB50024E200 /* Arma.h */,
+				02C8BE0718564EEB00BB4730 /* Espada.h */,
+				02C8BE0818564EEB00BB4730 /* Espada.m */,
 				271F246D1854FBB50024E200 /* Arma.m */,
 				271F246F1854FEDE0024E200 /* LeagueOfOrientedObject.h */,
 				271F24701854FEDE0024E200 /* LeagueOfOrientedObject.m */,
@@ -156,6 +161,7 @@
 			files = (
 				271F24711854FEDE0024E200 /* LeagueOfOrientedObject.m in Sources */,
 				271F246B1854F9B30024E200 /* Jogador.m in Sources */,
+				02C8BE0918564EEB00BB4730 /* Espada.m in Sources */,
 				271F245F1854A34F0024E200 /* main.m in Sources */,
 				271F246E1854FBB50024E200 /* Arma.m in Sources */,
 			);
@@ -269,6 +275,7 @@
 				271F24681854A34F0024E200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

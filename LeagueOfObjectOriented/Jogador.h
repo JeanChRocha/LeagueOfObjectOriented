@@ -18,6 +18,7 @@
     
     
 }
+
 @property (nonatomic) int raca;
 @property (nonatomic) float vida;
 @property (nonatomic) int forcaEscudo;
@@ -26,5 +27,6 @@
 
 -(float)ataque:(Jogador*)adversario;
 -(float)sofreAtaque:(Arma*)armaUsada forca:(double) forca;
+-(void) dizOi;
 
 @end
