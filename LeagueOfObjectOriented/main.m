@@ -17,7 +17,7 @@ int main(int argc, const char * argv[])
         NSLog(@"Hello, World!");
         
         NSLog(@"Teste Commit");
-        
+        NSLog(@"Teste Commit");
         
         
     }
