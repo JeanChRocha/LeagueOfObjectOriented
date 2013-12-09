@@ -19,6 +19,10 @@
     return 0;
 }
 
+-(void) dizOi {
+    NSLog(@"Oi!");
+}
+
 
 @end
 
