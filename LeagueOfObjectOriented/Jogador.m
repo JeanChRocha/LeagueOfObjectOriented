@@ -48,6 +48,7 @@ static int const ANAO = 3;
         nome = n;
         raca = r;
         vida = 1000;
+        forcaEscudo = 10;
         armaPrimaria = ap;
         armaSecundaria = as;
     }

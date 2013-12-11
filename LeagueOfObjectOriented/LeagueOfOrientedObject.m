@@ -105,7 +105,7 @@
 -(void) main {
     char s1[100] = {0}, s2[100] = {0};
     NSString *nome1, *nome2;
-    int raca1, raca2, forcaEscudo1, forcaEscudo2, arma1, arma2;
+    int raca1, raca2, arma1, arma2;
     Arma *principal1, *principal2, *secundaria1, *secundaria2;
     NSLog(@"\tJogador 1\n");
     NSLog(@"Nome: ");
@@ -113,8 +113,6 @@
     nome1 = [NSString stringWithUTF8String:s1];
     NSLog(@"Raca: ");
     scanf("%d",&raca1);
-    NSLog(@"Forca do escudo: ");
-    scanf("%d",&forcaEscudo1);
     NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
     NSLog(@"Arma: ");
     scanf("%d",&arma1);
@@ -130,7 +128,6 @@
     NSLog(@"Raca: ");
     scanf("%d",&raca2);
     NSLog(@"Forca do escudo: ");
-    scanf("%d",&forcaEscudo2);
     NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
     NSLog(@"Arma: ");
     scanf("%d",&arma2);
