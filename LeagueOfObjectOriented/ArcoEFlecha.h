@@ -13,6 +13,6 @@
     int quantidadeFlechas;
 }
 
--(ArcoEFlecha *) initWithQuantidadeFlechas:(int) q andPrecisaoArma:(double) p;
+-(ArcoEFlecha *) initWithQuantidadeFlechas:(int) q;
 
 @end

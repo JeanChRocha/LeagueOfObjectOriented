@@ -7,6 +7,7 @@
 //
 
 #import "Arma.h"
+#import <time.h>
 
 @implementation Arma
 
@@ -16,6 +17,11 @@
     self = [super init];
     return self;
 }
+
+-(void) mudarPrecisao {
+    precisaoDoAtaque = (rand() % 40) + 1 + 60;
+}
+
 -(double) calcularForcaAtaque:(int)raca {
     [NSException raise:NSInternalInconsistencyException
                 format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];

@@ -11,10 +11,9 @@
 
 @implementation Machado
 
--(Machado *) initWithForcaMaxima:(int)f andPrecisaoArma:(double)p {
+-(Machado *) initWithForcaMaxima:(int)f{
     self = [super init];
     if (self) {
-        precisaoDoAtaque = p;
         forcaMaxima = f;
         desgate = 0;
     }
@@ -22,6 +21,7 @@
 }
 
 -(double) calcularForcaAtaque:(int)raca {
+    [self mudarPrecisao];
     double bonus = (raca == [Jogador ANAO]) ? 1.1 : 1;
     return (forcaMaxima * (1 - ((desgate++)/10)) * precisaoDoAtaque) * bonus;
 }

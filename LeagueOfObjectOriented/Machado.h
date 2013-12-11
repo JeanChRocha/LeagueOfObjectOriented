@@ -14,6 +14,6 @@
     int desgate;
 }
 
--(Machado *) initWithForcaMaxima:(int)f andPrecisaoArma:(double) p;
+-(Machado *) initWithForcaMaxima:(int)f;
 
 @end

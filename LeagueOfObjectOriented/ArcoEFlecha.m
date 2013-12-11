@@ -11,16 +11,16 @@
 
 @implementation ArcoEFlecha
 
--(ArcoEFlecha *) initWithQuantidadeFlechas:(int)q andPrecisaoArma:(double)p {
+-(ArcoEFlecha *) initWithQuantidadeFlechas:(int)q{
     self = [super init];
     if (self) {
-        precisaoDoAtaque = p;
         quantidadeFlechas = q;
     }
     return self;
 }
 
 -(double) calcularForcaAtaque:(int) raca {
+    [self mudarPrecisao];
     double bonus = (raca == [Jogador ELFO]) ? 1.1 : 1;
     return (quantidadeFlechas-- > 0) ? precisaoDoAtaque * bonus : 0;
 }

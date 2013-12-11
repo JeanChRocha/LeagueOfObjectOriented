@@ -14,6 +14,6 @@
     int desgate;
 }
 
--(Espada *) initWithForcaMaxima:(int)f andPrecisaoAtaque:(double) p;
+-(Espada *) initWithForcaMaxima:(int)f;
 
 @end
