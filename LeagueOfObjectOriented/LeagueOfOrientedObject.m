@@ -15,6 +15,7 @@
 #import <stdio.h>
 #import <time.h>
 #import "ArmaFactory.h"
+#import "JogadorFactory.h"
 
 @implementation LeagueOfOrientedObject
 
@@ -107,6 +108,7 @@
     NSString *nome;
     int raca,forcaEscudo, arma1, arma2, opcao;
     Arma *principal, *secundaria;
+    JogadorFactory *jogadorFabrica = [[JogadorFactory alloc] init];
     NSMutableDictionary *jogadores = [[NSMutableDictionary alloc] init];
     
     do {
@@ -128,8 +130,8 @@
             scanf("%d",&arma2);
             secundaria = [ArmaFactory getArma:arma1 andRaca:raca];
             
-            //factory
-            player1 = [[Jogador alloc] initWithNome:nome andRaca:raca andArmaPrimaria:principal andArmaSecundaria:secundaria];
+            
+            player1 = [jogadorFabrica Criar:nome andRaca:raca andArmaPrimaria:principal andArmaSecundaria: secundaria];
             
             
             [jogadores setObject: player1 forKey: nome];

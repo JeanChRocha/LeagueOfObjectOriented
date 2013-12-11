@@ -19,6 +19,7 @@
 		65FD06C418568B7600CDF71D /* Magia.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06BC18568B7600CDF71D /* Magia.m */; };
 		65FD06C518568B7600CDF71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06BD18568B7600CDF71D /* main.m */; };
 		9B5B512C1858CB56008FBEB5 /* ArmaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B512B1858CB56008FBEB5 /* ArmaFactory.m */; };
+		EC16BBBB1858D9550085B682 /* JogadorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC16BBBA1858D9550085B682 /* JogadorFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,8 @@
 		65FD06BD18568B7600CDF71D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B5B512A1858CB56008FBEB5 /* ArmaFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArmaFactory.h; path = ../ArmaFactory.h; sourceTree = "<group>"; };
 		9B5B512B1858CB56008FBEB5 /* ArmaFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArmaFactory.m; path = ../ArmaFactory.m; sourceTree = "<group>"; };
+		EC16BBB91858D9550085B682 /* JogadorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogadorFactory.h; sourceTree = "<group>"; };
+		EC16BBBA1858D9550085B682 /* JogadorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogadorFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				65FD06B718568B7600CDF71D /* LeagueOfOrientedObject.h */,
 				65FD06B818568B7600CDF71D /* LeagueOfOrientedObject.m */,
 				65FD06B918568B7600CDF71D /* Machado.h */,
+				EC16BBB91858D9550085B682 /* JogadorFactory.h */,
+				EC16BBBA1858D9550085B682 /* JogadorFactory.m */,
 				65FD06BA18568B7600CDF71D /* Machado.m */,
 				65FD06BB18568B7600CDF71D /* Magia.h */,
 				65FD06BC18568B7600CDF71D /* Magia.m */,
@@ -185,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FD06BF18568B7600CDF71D /* Arena.m in Sources */,
+				EC16BBBB1858D9550085B682 /* JogadorFactory.m in Sources */,
 				65FD06C418568B7600CDF71D /* Magia.m in Sources */,
 				65FD06C018568B7600CDF71D /* Espada.m in Sources */,
 				9B5B512C1858CB56008FBEB5 /* ArmaFactory.m in Sources */,
