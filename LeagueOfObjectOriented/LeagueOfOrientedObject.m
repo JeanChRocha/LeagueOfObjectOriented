@@ -129,6 +129,8 @@
             NSLog(@"Arma secundaria: ");
             scanf("%d",&arma2);
             secundaria = [ArmaFactory getArma:arma1 andRaca:raca];
+            
+            //factory
             player1 = [[Jogador alloc] initWithNome:nome andRaca:raca andArmaPrimaria:principal andArmaSecundaria:secundaria];
             
             
