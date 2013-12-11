@@ -14,6 +14,7 @@
 #import "Espada.h"
 #import <stdio.h>
 #import <time.h>
+#import "ArmaFactory.h"
 
 @implementation LeagueOfOrientedObject
 
@@ -33,20 +34,6 @@
     else return player1;
 }
 
--(Arma *) retornarArma:(int) a deRaca:(int) r{
-    //srand((int)time(NULL));
-    float f = (rand() % 41) + 60;
-    if (a == 1) {
-        return [[ArcoEFlecha alloc] initWithQuantidadeFlechas:10 andPrecisaoArma:f];
-    }
-    else if (a == 2){
-        return [[Espada alloc] initWithForcaMaxima:1 andPrecisaoAtaque:f];
-    }
-    else if (a == 3){
-        return [[Machado alloc] initWithForcaMaxima:1 andPrecisaoArma:f];
-    }
-    else return [[Magia alloc] initWithPrecisaoArma:f andRaca:r];
-}
 
 -(void) jogar {
     //srand((int)time(NULL));
@@ -163,10 +150,10 @@
     NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
     NSLog(@"Arma: ");
     scanf("%d",&arma2);
-    principal2 = [self retornarArma:arma2 deRaca:raca2];
+    principal2 = [ArmaFactory getArma:arma2 andRaca:raca2];
     NSLog(@"Arma secundaria: ");
     scanf("%d",&arma2);
-    secundaria2 = [self retornarArma:arma2 deRaca:raca2];
+    secundaria2 = [ArmaFactory getArma:arma2 andRaca:raca2];
     player2 = [[Jogador alloc] initWithNome:nome2 andRaca:raca2 andArmaPrimaria:principal2 andArmaSecundaria:secundaria2];
     [self jogar];
 }
