@@ -11,7 +11,7 @@
 
 @implementation Magia
 
--(Magia *) initWithPrecisaoArma:(double) p andRaca:(int)r{
+-(Magia *) initWithRaca:(int)r {
     self = [super init];
     if (self) {
         if (r == [Jogador ELFO] || r == [Jogador ORC]) {
@@ -22,7 +22,9 @@
     return self;
 }
 
+
 -(double) calcularForcaAtaque:(int)raca{
+    [self mudarPrecisao];
     double atk = precisaoDoAtaque * habilidade;
     if (habilidade < 7) {
         habilidade++;

@@ -13,7 +13,7 @@
     int habilidade;
 }
 
--(Magia *) initWithPrecisaoArma:(double) p andRaca:(int)r;
+-(Magia *) initWithRaca:(int)r;
 -(double) calcularForcaAtaque:(int)raca;
 
 @end

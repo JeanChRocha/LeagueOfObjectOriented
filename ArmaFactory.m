@@ -15,17 +15,16 @@
 @implementation ArmaFactory
 
 +(Arma *) getArma:(int)tipo andRaca:(int)raca {
-    float f = (rand() % 41) + 60;
     if (tipo == 1) {
-        return [[ArcoEFlecha alloc] initWithQuantidadeFlechas:10 andPrecisaoArma:f];
+        return [[ArcoEFlecha alloc] initWithQuantidadeFlechas:10];
     }
     else if (tipo == 2){
-        return [[Espada alloc] initWithForcaMaxima:1 andPrecisaoAtaque:f];
+        return [[Espada alloc] initWithForcaMaxima:1];
     }
     else if (tipo == 3){
-        return [[Machado alloc] initWithForcaMaxima:1 andPrecisaoArma:f];
+        return [[Machado alloc] initWithForcaMaxima:1];
     }
-    else return [[Magia alloc] initWithPrecisaoArma:f andRaca:raca];
+    else return [[Magia alloc] initWithRaca:raca];
 }
 
 @end

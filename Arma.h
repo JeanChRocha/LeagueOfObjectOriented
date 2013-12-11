@@ -17,5 +17,6 @@
 @property double precisaoDoAtaque;
 
 -(Arma *) init;
+-(void) mudarPrecisao;
 -(double) calcularForcaAtaque:(int)raca;
 @end
