@@ -117,41 +117,59 @@
 
 -(void) main {
     char s1[100] = {0}, s2[100] = {0};
-    NSString *nome1, *nome2;
-    int raca1, raca2, forcaEscudo1, forcaEscudo2, arma1, arma2;
+    NSString *nome;
+    int raca,forcaEscudo, arma1, arma2, opcao;
     Arma *principal1, *principal2, *secundaria1, *secundaria2;
+    do {
+        NSLog(@"Opçoes:\n1 - Criar Jogador \n2 - Jogar \n3 - sair");
+        if (opcao == 1) {
+            
+        }
+        else if (opcao ==2) {
+            
+        }
+        
+    } while (opcao != 3);
+        
+    
+    scanf("%d", &opcao);
+    
+    
+    
     NSLog(@"\tJogador 1\n");
     NSLog(@"Nome: ");
     scanf("%s",s1);
-    nome1 = [NSString stringWithUTF8String:s1];
+    nome = [NSString stringWithUTF8String:s1];
     NSLog(@"Raca: ");
-    scanf("%d",&raca1);
+    scanf("%d",&raca);
     NSLog(@"Forca do escudo: ");
-    scanf("%d",&forcaEscudo1);
+    scanf("%d",&forcaEscudo);
     NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
     NSLog(@"Arma: ");
     scanf("%d",&arma1);
-    principal1 = [self retornarArma:arma1 deRaca:raca1];
+    principal1 = [self retornarArma:arma1 deRaca:raca];
     NSLog(@"Arma secundaria: ");
     scanf("%d",&arma1);
-    secundaria1 = [self retornarArma:arma1 deRaca:raca1];
-    player1 = [[Jogador alloc] initWithNome:nome1 andRaca:raca1 andArmaPrimaria:principal1 andArmaSecundaria:secundaria1];
-    NSLog(@"\tJogador 2\n");
-    NSLog(@"Nome: ");
-    scanf("%s",s2);
-    nome2 = [NSString stringWithUTF8String:s2];
-    NSLog(@"Raca: ");
-    scanf("%d",&raca2);
-    NSLog(@"Forca do escudo: ");
-    scanf("%d",&forcaEscudo2);
-    NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
-    NSLog(@"Arma: ");
-    scanf("%d",&arma2);
-    principal2 = [self retornarArma:arma2 deRaca:raca2];
-    NSLog(@"Arma secundaria: ");
-    scanf("%d",&arma2);
-    secundaria2 = [self retornarArma:arma2 deRaca:raca2];
-    player2 = [[Jogador alloc] initWithNome:nome2 andRaca:raca2 andArmaPrimaria:principal2 andArmaSecundaria:secundaria2];
+    secundaria1 = [self retornarArma:arma1 deRaca:raca];
+    player1 = [[Jogador alloc] initWithNome:nome andRaca:raca andArmaPrimaria:principal1 andArmaSecundaria:secundaria1];
+    
+    
+//    NSLog(@"\tJogador 2\n");
+//    NSLog(@"Nome: ");
+//    scanf("%s",s2);
+//    nome2 = [NSString stringWithUTF8String:s2];
+//    NSLog(@"Raca: ");
+//    scanf("%d",&raca2);
+//    NSLog(@"Forca do escudo: ");
+//    scanf("%d",&forcaEscudo2);
+//    NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
+//    NSLog(@"Arma: ");
+//    scanf("%d",&arma2);
+//    principal2 = [self retornarArma:arma2 deRaca:raca2];
+//    NSLog(@"Arma secundaria: ");
+//    scanf("%d",&arma2);
+//    secundaria2 = [self retornarArma:arma2 deRaca:raca2];
+//    player2 = [[Jogador alloc] initWithNome:nome2 andRaca:raca2 andArmaPrimaria:principal2 andArmaSecundaria:secundaria2];
     [self jogar];
 }
 
