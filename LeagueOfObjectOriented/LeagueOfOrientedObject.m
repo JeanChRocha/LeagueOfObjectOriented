@@ -120,8 +120,6 @@
             nome = [NSString stringWithUTF8String:s1];
             NSLog(@"Raca: ");
             scanf("%d",&raca);
-//            NSLog(@"Forca do escudo: ");
-//            scanf("%d",&forcaEscudo);
             NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
             NSLog(@"Arma: ");
             scanf("%d",&arma1);
