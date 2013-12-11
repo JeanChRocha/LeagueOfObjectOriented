@@ -38,32 +38,32 @@
 -(void) jogar {
     //srand((int)time(NULL));
     Arena* arena = [[Arena alloc] init];
-    NSLog(@"Arena: %@\n", [arena imprimirmapa]);
+    NSLog(@"\nArena: %@\n", [arena imprimirmapa]);
     
     int primeiro = rand() % 2 + 1;
     int escolhe;
     while (1) {
         if (primeiro == 1) {
-            NSLog(@"Jogador 1 - digite 1 ou 2 para escolher sua arma: ");
+            NSLog(@"\nJogador 1 - digite 1 ou 2 para escolher sua arma: ");
             scanf("%d", &escolhe);
             
             double a = [player1 ataque:arena andEscolhe:escolhe-1];
-            NSLog(@"Ataque do player1 = %f\n",a);
+            NSLog(@"\nAtaque do player1 = %f\n",a);
             [player2 sofrerAtaque:a];
-            NSLog(@"Vida do player2 = %f\n",[player2 vida]);
+            NSLog(@"\nVida do player2 = %f\n",[player2 vida]);
             
             
             if ([self verificarVencedor]) {
                 break;
             }
             
-            NSLog(@"Jogador 2 - digite 1 ou 2 para escolher sua arma: ");
+            NSLog(@"\nJogador 2 - digite 1 ou 2 para escolher sua arma: ");
             scanf("%d", &escolhe);
             
             double b = [player2 ataque:arena andEscolhe:escolhe-1];
-            NSLog(@"Ataque do player2 = %f\n",b);
+            NSLog(@"\nAtaque do player2 = %f\n",b);
             [player1 sofrerAtaque:b];
-            NSLog(@"Vida do player1 = %f\n",[player1 vida]);
+            NSLog(@"\nVida do player1 = %f\n",[player1 vida]);
             
             if ([self verificarVencedor]) {
                 break;
@@ -73,25 +73,25 @@
         
         
         else {
-            NSLog(@"Jogador 2 - digite 1 ou 2 para escolher sua arma: ");
+            NSLog(@"\nJogador 2 - digite 1 ou 2 para escolher sua arma e ATACAR: ");
             scanf("%d", &escolhe);
             
             double b = [player2 ataque:arena andEscolhe:escolhe-1];
-            NSLog(@"Ataque do player2 = %f\n",b);
+            NSLog(@"\nAtaque do player2 = %f\n",b);
             [player1 sofrerAtaque:b];
-            NSLog(@"Vida do player1 = %f\n",[player1 vida]);
+            NSLog(@"\nVida do player1 = %f\n",[player1 vida]);
             
             if ([self verificarVencedor]) {
                 break;
             }
             
-            NSLog(@"Jogador 1 - digite 1 ou 2 para escolher sua arma: ");
+            NSLog(@"\nJogador 1 - digite 1 ou 2 para escolher sua arma e ATACAR: ");
             scanf("%d", &escolhe);
             
             double a = [player1 ataque:arena andEscolhe:escolhe-1];
-            NSLog(@"Ataque do player1 = %f\n",a);
+            NSLog(@"Ataque do player1 = %f",a);
             [player2 sofrerAtaque:a];
-            NSLog(@"Vida do player2 = %f\n",[player2 vida]);
+            NSLog(@"Vida do player2 = %f",[player2 vida]);
             
             if ([self verificarVencedor]) {
                 break;
@@ -105,26 +105,25 @@
 -(void) main {
     char s1[100] = {0};
     NSString *nome;
-    int raca,forcaEscudo, arma1, arma2, opcao;
+    int raca, arma1, arma2, opcao;
     Arma *principal, *secundaria;
     NSMutableDictionary *jogadores = [[NSMutableDictionary alloc] init];
     
     do {
-        NSLog(@"Opçoes:\n1 - Criar Jogador \n2 - Jogar \n3 - sair");
+        NSLog(@"Opções:\n1 - Criar Jogador \n2 - Jogar \n3 - Sair");
         scanf("%d", &opcao);
         
         
         if (opcao == 1) {
-            NSLog(@"Nome: ");
+            NSLog(@"\nNome: ");
             scanf("%s",s1);
             nome = [NSString stringWithUTF8String:s1];
-            NSLog(@"Raca: ");
+            NSLog(@"\nRaca:\n 1. Elfo\n 2. Humano\n 3. Orc\n 4. Anão\n");
             scanf("%d",&raca);
-            NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
-            NSLog(@"Arma: ");
+            NSLog(@"\nEscolha sua Arma:\n 1. Arco e flecha \n 2. Espada \n 3. Machado \n 4. Magia\n");
             scanf("%d",&arma1);
             principal = [ArmaFactory getArma:arma1 andRaca:raca];
-            NSLog(@"Arma secundaria: ");
+            NSLog(@"\nEscolha sua Arma:\n 1. Arco e flecha \n 2. Espada \n 3. Machado \n 4. Magia\n");
             scanf("%d",&arma2);
             secundaria = [ArmaFactory getArma:arma1 andRaca:raca];
             
@@ -136,18 +135,18 @@
 
         }
         else if (opcao ==2) {
-            NSLog(@"Jogadores Cadastrados: ");
+            NSLog(@"\nJogadores Cadastrados: ");
             NSArray *keys = [jogadores allKeys];
             for (NSString *nome in keys) {
                 NSLog(@"%@", nome);
             }
             
-            NSLog(@"Escolha o player1: ");
+            NSLog(@"\nDigite o nome do primeiro Jogador:\n ");
             scanf("%s", s1);
             nome = [NSString stringWithUTF8String:s1];
             player1 = [jogadores objectForKey:nome];
             
-            NSLog(@"Escolha o player2: ");
+            NSLog(@"\nEscolha o nome do segundo Jogador:\n ");
             scanf("%s", s1);
             nome = [NSString stringWithUTF8String:s1];
             player2 = [jogadores objectForKey:nome];
