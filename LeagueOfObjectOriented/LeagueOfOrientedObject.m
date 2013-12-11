@@ -120,8 +120,6 @@
             nome = [NSString stringWithUTF8String:s1];
             NSLog(@"Raca: ");
             scanf("%d",&raca);
-            NSLog(@"Forca do escudo: ");
-            scanf("%d",&forcaEscudo);
             NSLog(@"Arco e flecha = 1 | Espada = 2 || Machado = 3 || Magia = 4\n");
             NSLog(@"Arma: ");
             scanf("%d",&arma1);
@@ -129,6 +127,8 @@
             NSLog(@"Arma secundaria: ");
             scanf("%d",&arma2);
             secundaria = [ArmaFactory getArma:arma1 andRaca:raca];
+            
+            //factory
             player1 = [[Jogador alloc] initWithNome:nome andRaca:raca andArmaPrimaria:principal andArmaSecundaria:secundaria];
             
             
